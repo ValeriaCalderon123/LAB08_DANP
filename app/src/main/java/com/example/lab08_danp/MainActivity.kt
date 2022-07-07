@@ -7,9 +7,9 @@ import android.util.Log
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import com.bumptech.glide.Glide
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.messaging.FirebaseMessaging
-import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
 
         textTitle.text=titulo
         textMessage.text = mensaje
-        //vimagen.setImageResource(imagen)
+        Glide.with(this).load(imagen).into(vimagen)
 
     }
     private fun notification(){
