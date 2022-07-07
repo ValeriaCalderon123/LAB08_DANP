@@ -40,6 +40,12 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="400dp"
             tools:srcCompat="@tools:sample/avatars" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NOTIFICACION" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
