@@ -17,11 +17,16 @@ class MainActivity2 : AppCompatActivity() {
     }
 
     override fun onNewIntent(intent: Intent?) {
+        Log.e("ERRORRRRRRR", "Llega al 2 activity")
         super.onNewIntent(intent)
+        Log.e("ERRORRRRRRR", "Llega al 2 activity")
         val bundle: Bundle? = intent!!.extras
+        Log.e("ERRORRRRRRR", bundle.toString())
         if (bundle != null) {
-            val msg = bundle?.getString("KEY 1")
-            Toast.makeText(baseContext, msg, Toast.LENGTH_LONG).show()
+            Log.e("ERRORRRRRRR", "Llega al 2 activity")
+            val msg = bundle.getString("KEY_1")
+            Log.e("ERRORRRRRRR", "$msg")
+            Toast.makeText(this, "$msg", Toast.LENGTH_LONG).show()
         }
     }
 }
